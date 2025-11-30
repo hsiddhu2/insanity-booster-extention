@@ -1,0 +1,48 @@
+{
+  "name": "web-development",
+  "version": "1.0.0",
+  "description": "Best practices for web development with React, TypeScript, and modern testing",
+  "author": "Kiro Team",
+  "tags": ["web", "react", "typescript", "frontend", "testing"],
+  "steeringFiles": [
+    {
+      "file": "react-best-practices.md",
+      "title": "React Best Practices",
+      "inclusion": "fileMatch",
+      "fileMatchPattern": "*.tsx,*.jsx,*react*"
+    },
+    {
+      "file": "typescript-best-practices.md",
+      "title": "TypeScript Best Practices",
+      "inclusion": "fileMatch",
+      "fileMatchPattern": "*.ts,*.tsx"
+    },
+    {
+      "file": "testing-best-practices.md",
+      "title": "Testing Best Practices",
+      "inclusion": "always"
+    },
+    {
+      "file": "development-standards.md",
+      "title": "Development Standards",
+      "inclusion": "always"
+    }
+  ],
+  "hooks": [
+    {
+      "file": "hooks/react-hooks.json",
+      "title": "React Validation Hooks",
+      "fileTypes": ["tsx", "jsx"]
+    },
+    {
+      "file": "hooks/typescript-hooks.json",
+      "title": "TypeScript Validation Hooks",
+      "fileTypes": ["ts", "tsx"]
+    },
+    {
+      "file": "hooks/testing-hooks.json",
+      "title": "Testing Validation Hooks",
+      "fileTypes": ["ts", "tsx", "js", "jsx"]
+    }
+  ]
+}

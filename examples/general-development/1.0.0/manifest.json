@@ -1,0 +1,69 @@
+{
+  "name": "general-development",
+  "version": "1.0.0",
+  "description": "Universal code quality, security, and documentation standards for all developers",
+  "author": "Kiro Team",
+  "tags": [
+    "universal",
+    "code-quality",
+    "security",
+    "documentation",
+    "best-practices"
+  ],
+  "steeringFiles": [
+    {
+      "file": "code-quality-standards.md",
+      "title": "Code Quality Standards",
+      "inclusion": "always"
+    },
+    {
+      "file": "security-basics.md",
+      "title": "Security Basics",
+      "inclusion": "always"
+    },
+    {
+      "file": "documentation-basics.md",
+      "title": "Documentation Basics",
+      "inclusion": "always"
+    },
+    {
+      "file": "git-workflow.md",
+      "title": "Git Workflow Standards",
+      "inclusion": "always"
+    }
+  ],
+  "hooks": [
+    {
+      "file": "hooks/code-quality.json",
+      "title": "Code Quality Hooks",
+      "fileTypes": ["*"]
+    },
+    {
+      "file": "hooks/security-basics.json",
+      "title": "Security Hooks",
+      "fileTypes": ["*"]
+    },
+    {
+      "file": "hooks/documentation.json",
+      "title": "Documentation Hooks",
+      "fileTypes": ["*"]
+    }
+  ],
+  "kiroHooks": [
+    {
+      "file": "kiro-hooks/format-on-save.json",
+      "title": "Format Code on Save",
+      "description": "Automatically format code when saving files"
+    },
+    {
+      "file": "kiro-hooks/check-security.json",
+      "title": "Security Check",
+      "description": "Run security checks on session start"
+    },
+    {
+      "file": "kiro-hooks/add-documentation.json",
+      "title": "Add Documentation",
+      "description": "Remind to add documentation before implementing"
+    }
+  ]
+}

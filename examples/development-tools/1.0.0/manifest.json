@@ -1,0 +1,42 @@
+{
+  "name": "development-tools",
+  "version": "1.0.0",
+  "description": "Best practices for development tools including Git, AWS CLI, Python, and MCP",
+  "author": "Kiro Team",
+  "tags": ["tools", "git", "aws", "python", "mcp", "cli"],
+  "steeringFiles": [
+    {
+      "file": "git-best-practices.md",
+      "title": "Git Best Practices",
+      "inclusion": "always"
+    },
+    {
+      "file": "aws-cli-best-practices.md",
+      "title": "AWS CLI Best Practices",
+      "inclusion": "always"
+    },
+    {
+      "file": "python-best-practices.md",
+      "title": "Python Best Practices",
+      "inclusion": "fileMatch",
+      "fileMatchPattern": "*.py"
+    },
+    {
+      "file": "mcp-best-practices.md",
+      "title": "MCP Best Practices",
+      "inclusion": "always"
+    }
+  ],
+  "hooks": [
+    {
+      "file": "hooks/git-hooks.json",
+      "title": "Git Validation Hooks",
+      "fileTypes": ["*"]
+    },
+    {
+      "file": "hooks/python-hooks.json",
+      "title": "Python Validation Hooks",
+      "fileTypes": ["py"]
+    }
+  ]
+}

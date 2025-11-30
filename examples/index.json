@@ -1,0 +1,51 @@
+{
+  "steeringPacks": [
+    {
+      "name": "general-development",
+      "version": "1.0.0",
+      "description": "Universal code quality, security, and documentation standards for all developers",
+      "author": "Kiro Team",
+      "tags": ["universal", "code-quality", "security", "documentation", "best-practices"],
+      "fileCount": 7,
+      "recommended": true,
+      "workflow": "general"
+    },
+    {
+      "name": "web-development",
+      "version": "1.0.0",
+      "description": "Best practices for web development with React, TypeScript, and modern testing",
+      "author": "Kiro Team",
+      "tags": ["web", "react", "typescript", "frontend", "testing"],
+      "fileCount": 4,
+      "workflow": "web-frontend"
+    },
+    {
+      "name": "infrastructure",
+      "version": "1.0.0",
+      "description": "Best practices for infrastructure as code, containerization, and security",
+      "author": "Kiro Team",
+      "tags": ["infrastructure", "cdk", "docker", "security", "iac"],
+      "fileCount": 3,
+      "workflow": "devops"
+    },
+    {
+      "name": "development-tools",
+      "version": "1.0.0",
+      "description": "Best practices for development tools including Git, AWS CLI, Python, and MCP",
+      "author": "Kiro Team",
+      "tags": ["tools", "git", "aws", "python", "mcp", "cli"],
+      "fileCount": 4,
+      "workflow": "general"
+    },
+    {
+      "name": "comprehensive-standards",
+      "version": "1.0.0",
+      "description": "Comprehensive coding standards with safe, optimized hooks for JavaScript, TypeScript, Python, React, Vue, Angular, security, and documentation",
+      "author": "Kiro Team",
+      "tags": ["comprehensive", "javascript", "typescript", "python", "react", "vue", "angular", "security", "documentation", "safe-hooks"],
+      "fileCount": 7,
+      "recommended": false,
+      "workflow": "comprehensive"
+    }
+  ]
+}

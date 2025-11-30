@@ -1,0 +1,13 @@
+{
+  "name": "Add Documentation",
+  "description": "Prompt to add documentation when creating new functions or classes",
+  "version": "1.0.0",
+  "trigger": {
+    "type": "onMessageSend",
+    "icon": "book"
+  },
+  "action": {
+    "type": "sendMessage",
+    "message": "Before implementing, ensure all new functions and classes have proper documentation comments (JSDoc, docstrings, etc.) explaining their purpose, parameters, and return values."
+  }
+}

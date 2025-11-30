@@ -1,0 +1,14 @@
+{
+  "name": "Format Code on Save",
+  "description": "Automatically format code files when saving to maintain consistent style",
+  "version": "1.0.0",
+  "trigger": {
+    "type": "onFileSave",
+    "icon": "symbol-file",
+    "filePattern": "**/*.{ts,js,tsx,jsx,py,java,go,rs}"
+  },
+  "action": {
+    "type": "sendMessage",
+    "message": "Format this file according to the project's code style standards. Use the appropriate formatter (Prettier for JS/TS, Black for Python, etc.) and ensure consistent indentation and spacing."
+  }
+}

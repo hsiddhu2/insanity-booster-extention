@@ -1,0 +1,42 @@
+{
+  "name": "infrastructure",
+  "version": "1.0.0",
+  "description": "Best practices for infrastructure as code, containerization, and security",
+  "author": "Kiro Team",
+  "tags": ["infrastructure", "cdk", "docker", "security", "iac"],
+  "steeringFiles": [
+    {
+      "file": "cdk-best-practices.md",
+      "title": "CDK Best Practices",
+      "inclusion": "always"
+    },
+    {
+      "file": "docker-best-practices.md",
+      "title": "Docker Best Practices",
+      "inclusion": "fileMatch",
+      "fileMatchPattern": "*Dockerfile*,*docker-compose*"
+    },
+    {
+      "file": "security-best-practices.md",
+      "title": "Security Best Practices",
+      "inclusion": "always"
+    }
+  ],
+  "hooks": [
+    {
+      "file": "hooks/cdk-hooks.json",
+      "title": "CDK Validation Hooks",
+      "fileTypes": ["ts"]
+    },
+    {
+      "file": "hooks/docker-hooks.json",
+      "title": "Docker Validation Hooks",
+      "fileTypes": ["dockerfile"]
+    },
+    {
+      "file": "hooks/security-hooks.json",
+      "title": "Security Validation Hooks",
+      "fileTypes": ["ts", "tsx", "js", "jsx", "py", "java"]
+    }
+  ]
+}

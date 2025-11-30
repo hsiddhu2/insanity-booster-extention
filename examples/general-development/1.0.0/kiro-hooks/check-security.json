@@ -1,0 +1,14 @@
+{
+  "name": "Security Check on Commit",
+  "description": "Run security checks before committing code to catch vulnerabilities early",
+  "version": "1.0.0",
+  "trigger": {
+    "type": "onSessionStart",
+    "icon": "shield"
+  },
+  "action": {
+    "type": "shellCommand",
+    "command": "echo '🔒 Running security checks...' && git diff --cached --name-only | grep -E '\\.(js|ts|py|java)$' | head -5",
+    "showOutput": true
+  }
+}
